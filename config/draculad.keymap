@@ -43,6 +43,7 @@
         &mt LSHFT Z   &kp X         &kp C         &kp D         &kp V  &trans    &trans     &kp K  &kp H         &kp COMMA   &kp DOT     &mt RSHFT FSLH  
                         &lt MEDIA ESC  &lt NAV SPACE    &lt MOUSE TAB                       &lt SYM RET  &lt NUM BSPC  &lt FUN DEL     
       >;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
     media_layer { 
@@ -52,6 +53,7 @@
         &trans    &trans  &trans   &trans   &trans    &bt BT_CLR &bt BT_NXT   &trans      &trans            &trans        &trans        &trans     
                          &trans   &kp SPACE   &trans                          &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE    
       >;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
     nav_layer { 
@@ -61,6 +63,7 @@
         &trans    &trans  &trans   &trans   &trans    &trans    &trans      &kp INSERT          &kp HOME        &kp PG_DN   &kp PG_UP   &kp END     
                          &trans   &kp SPACE   &trans                          &trans              &trans       &trans      
       >;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
     mouse_layer { 
@@ -70,6 +73,7 @@
         &trans    &trans  &trans   &trans   &trans    &trans    &trans      &trans      &kp HOME      &kp K_SCROLL_DOWN &kp K_SCROLL_UP &kp END     
                          &trans   &kp SPACE   &trans                          &trans      &trans       &trans 
       >;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
     sym_layer { 
@@ -79,6 +83,7 @@
         &kp TILDE   &kp EXCL  &kp AT      &kp POUND   &kp PIPE    &trans    &trans    &trans     &trans     &trans      &trans      &trans
                             &kp LPAR   &kp RPAR   &kp UNDER                             &trans     &kp BSPC     &trans
       >;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
     num_layer { 
@@ -88,6 +93,7 @@
         &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH        &trans    &trans    &trans     &trans     &trans      &trans  &trans
                       &kp DOT   &kp N0  &kp KP_MINUS                             &trans     &kp BSPC     &trans 
       >;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
     fun_layer { 
@@ -97,6 +103,7 @@
         &kp F10   &kp F1  &kp F2   &kp F3  &kp PIPE  &soft_off  &soft_off    &trans     &trans     &trans      &trans      &trans
                         &trans   &kp SPACE  &kp TAB                            &trans     &kp BSPC     &trans
       >;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
   };
