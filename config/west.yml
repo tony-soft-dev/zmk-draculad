@@ -3,7 +3,7 @@ manifest:
       - name: zmkfirmware
         url-base: https://github.com/zmkfirmware
       - name: xzebra
-        url-base: https://github.com/xzebra
+        url-base: https://github.com/tony-soft-dev
     projects:
       - name: zmk
         remote: zmkfirmware
