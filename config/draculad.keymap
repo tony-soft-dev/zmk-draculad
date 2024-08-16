@@ -49,7 +49,7 @@
       bindings = <
         &trans    &trans  &trans   &trans   &trans                            &trans      &trans            &trans        &trans        &trans      
         &trans    &trans  &trans   &trans   &trans                            &trans      &kp K_PREV        &kp C_VOL_DN  &kp C_VOL_UP  &kp K_NEXT  
-        &trans    &trans  &trans   &trans   &trans    &trans &trans   &trans      &trans            &trans        &trans        &trans     
+        &trans    &trans  &trans   &trans   &trans    &bt BT_CLR &bt BT_NXT   &trans      &trans            &trans        &trans        &trans     
                          &trans   &kp SPACE   &trans                          &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE    
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -86,23 +86,21 @@
     };
 
     num_layer { 
-      bi7ndings = <
+      bindings = <
         &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT                            &trans     &trans     &trans      &trans  &trans
         &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL                           &trans     &trans     &trans      &trans  &trans
         &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH        &trans    &trans    &trans     &trans     &trans      &trans  &trans
                       &kp DOT   &kp N0  &kp KP_MINUS                             &trans     &kp BSPC     &trans 
       >;
-      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
     fun_layer { 
       bindings = <
         &kp F12   &kp F7  &kp F8   &kp F9  &kp RBRC                          &trans     &trans     &trans      &trans      &trans
         &kp F11   &kp F4  &kp F5   &kp F6  &kp PLUS                          &trans     &trans     &trans      &trans      &trans
-        &kp F10   &kp F1  &kp F2   &kp F3  &kp PIPE  &trans  &trans    &trans     &trans     &trans      &trans      &trans
+        &kp F10   &kp F1  &kp F2   &kp F3  &kp PIPE  &soft_off  &soft_off    &trans     &trans     &trans      &trans      &trans
                         &trans   &kp SPACE  &kp TAB                            &trans     &kp BSPC     &trans
       >;
-      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
 
   };
