@@ -60,7 +60,7 @@
         &trans    &trans  &trans   &trans   &trans                          &kp K_REDO          &kp K_PASTE     &kp K_COPY  &kp K_CUT   &kp K_UNDO  
         &trans    &trans  &trans   &trans   &trans                          &kp CAPS            &kp LEFT        &kp DOWN    &kp UP      &kp RIGHT   
         &trans    &trans  &trans   &trans   &trans    &trans    &trans      &kp INSERT          &kp HOME        &kp PG_DN   &kp PG_UP   &kp END     
-                         &trans   &kp SPACE   &trans                          &trans              &trans       &trans      
+                         &trans   &trans   &trans                          &trans              &trans       &trans      
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
@@ -90,7 +90,7 @@
         &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT                            &trans     &trans     &trans      &trans  &trans
         &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL                           &trans     &trans     &trans      &trans  &trans
         &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH        &trans    &trans    &trans     &trans     &trans      &trans  &trans
-                      &kp DOT   &kp N0  &kp KP_MINUS                             &trans     &kp BSPC     &trans 
+                      &kp DOT   &kp N0  &kp KP_MINUS                             &trans     &trans     &trans 
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
     };
