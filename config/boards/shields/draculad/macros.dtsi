@@ -1,0 +1,28 @@
+/* Macro macro: */
+#define str(s) #s
+#define MACRO(NAME, BINDINGS) \
+  macro_##NAME: macro_##NAME { \
+      compatible = "zmk,behavior-macro"; \
+      label = str(macro_##NAME); \
+      #binding-cells = <0>; \
+      wait-ms = <30>; \
+      tap-ms = <40>; \
+      bindings = <BINDINGS>; \
+  };
+
+      /* Brackets */
+MACRO(parentheses, &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT)
+MACRO(brackets, &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT)
+MACRO(ltgt, &kp LESS_THAN &kp GREATER_THAN &kp LEFT)
+MACRO(braces, &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT)
+
+/* Navigation */
+//MACRO(window_next, &kt LALT &kp TAB &kt LALT)
+//MACRO(window_prev, &kt LALT &kt LSHFT &kp TAB &kt LSHFT &kt LALT)
+//MACRO(browser_next, &kt LCTRL &kp TAB &kt LCTRL)
+//MACRO(browser_prev, &kt LCTRL &kt LSHIFT &kp TAB &kt LSHIFT &kt LCTRL)
+//MACRO(workspace_next, &kt LGUI &kp TAB &kt LGUI)
+//MACRO(workspace_prev, &kt LGUI &kt LSHIFT &kp TAB &kt LSHIFT &kt LGUI)
+//MACRO(vim_next, &kt LGUI &kp TAB &kt LGUI)
+//MACRO(vim_prev, &kt LGUI &kt LSHIFT &kp TAB &kt LSHIFT &kt LGUI)
+

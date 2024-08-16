@@ -1,0 +1,46 @@
+/*                KEY POSITIONS
+
+  ╭─────────────────── ─╮   ╭── ───────────────── ─╮
+  │  0   1   2   3   4  │   │   5   6   7   8   9  │
+  │ 10  11  12  13  14  │   │  15  16  17  18  19  │
+  │ 20  21  22  23  24  25 26  27  28  29  30  31  │
+  ╰─────────32╮ 33  34         35  36  37───────── ╯
+              ╰─────── ─╯   ╰────────╯            */
+
+compatible = "zmk,combos";
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+  };
+
+/* Left Handy */
+COMBO(escape, &kp ESC, 1 2, DEFAULT)
+COMBO(tab, &kp ESC, 13 14, DEFAULT)
+/* Brackets */
+COMBO(left_parenthesis, &kp LEFT_PARENTHESIS, 6 7, DEFAULT)
+COMBO(right_parenthesis, &kp RIGHT_PARENTHESIS, 7 8, DEFAULT)
+COMBO(parentheses, &macro_parentheses, 6 7 8, DEFAULT)
+COMBO(left_brace, &kp LEFT_BRACE,16 17, DEFAULT)
+COMBO(right_brace, &kp RIGHT_BRACE, 17 18, DEFAULT)
+COMBO(braces, &macro_braces, 16 17 18, DEFAULT)
+COMBO(left_bracket, &kp LEFT_BRACKET, 28 29, DEFAULT)
+COMBO(right_bracket, &kp RIGHT_BRACKET, 29 30, DEFAULT)
+COMBO(brackets, &macro_brackets, 28 29 30, DEFAULT)
+//COMBO(less_than, &kp LESS_THAN, 21 22, DEFAULT)
+//COMBO(greater_than, &kp GREATER_THAN, 22 23, DEFAULT)
+COMBO(ltgt, &macro_ltgt, 29 30 31, DEFAULT)
+
+///* Text processing */
+//COMBO(undo, &kp LG(Z), 20 21, BASE)
+//COMBO(cut, &kp LG(X), 21 23, BASE)
+//COMBO(copy, &kp LG(C), 21 22, BASE)
+//COMBO(paste, &kp LG(V), 21 22 23, BASE)
+//COMBO(select_all, &kp LG(A), 20 23, BASE)
+//COMBO(caps_word, &caps_word, 31 32, BASE)
+
+/* Random */
+COMBO(quotes, &kp SQT, 18 19, DEFAULT)
